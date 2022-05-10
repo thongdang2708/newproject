@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: darksalmon;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.counter-box {
+    position: absolute;
+    bottom: 40px;
+}
+
+.counter-box label {
+    font-size: 26px;
+}
+
+.counter-box input {
+    font-size: 20px;
+    background-color: transparent;
+    border: 0;
+    text-align: right;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.counter-box input:focus {
+    outline: none;
+}
+
+;

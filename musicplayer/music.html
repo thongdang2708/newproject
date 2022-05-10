@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./music.css">
+    <title> Music </title>
+</head>
+
+
+
+
+
+
+
+
+
+<body>
+
+    <h1> Music Player </h1>
+    <div class="music-container" id="music-container">
+        <div class="music-info">
+            <h4 class="title" id="title"> Ukelele </h4>
+            <div class="progress-container" id="progress-container">
+                <div class="progress" id="progress"></div>
+            </div>
+        </div>
+
+        <audio src="./music/ukulele.mp3" id="audio"></audio>
+
+        <div class="image-container">
+            <img src="./images/ukulele.jpg" alt="music-cover" id="cover">
+        </div>
+
+        <div class="navigation" id="navigation">
+            <button id="prev" class="action-btn"> <i class="fas fa-backward"></i></button>
+            <button id="play" class="action-btn action-btn-big"> <i class="fas fa-play"></i></button>
+            <button id="next" class="action-btn"> <i class="fas fa-forward"></i></button>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+        background-image: linear-gradient(0deg, rgba(247, 247, 247, 1) 24%, rgba(252, 221, 221, 1) 92%);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .music-container {
+        background-color: #fff;
+        padding: 20px 30px;
+        margin: 100px 20px;
+        box-shadow: 0 20px 20px 0 rgba(252, 169, 169, 0.6);
+        border-radius: 15px;
+        display: flex;
+        z-index: 10;
+        position: relative;
+    }
+    
+    .image-container {
+        position: relative;
+        width: 110px;
+    }
+    
+    .image-container img {
+        position: absolute;
+        width: inherit;
+        height: 110px;
+        border-radius: 50%;
+        bottom: 0;
+        left: 0;
+        animation: grow 3s linear forwards infinite;
+        animation-play-state: paused;
+    }
+    
+    @keyframes grow {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    
+    .music-container.play .image-container img {
+        animation-play-state: running;
+    }
+    
+    .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+    }
+    
+    .action-btn {
+        margin: 0 30px;
+        font-size: 20px;
+        border: 0;
+        background-color: transparent;
+        color: #dfdbdf;
+    }
+    
+    .action-btn.action-btn-big {
+        color: #cdc2d0;
+        font-size: 30px;
+    }
+    
+    .music-info {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 15px 15px 0 0;
+        position: absolute;
+        top: 0;
+        left: 20px;
+        transform: translateY(0%);
+        opacity: 0;
+        transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+        width: calc(100% - 40px);
+        padding: 20px 20px 20px 150px;
+    }
+    
+    .music-info h4 {
+        margin: 0;
+    }
+    
+    .music-container.play .music-info {
+        opacity: 1;
+        transform: translateY(-100%);
+    }
+    
+    .progress-container {
+        background-color: #fff;
+        width: 100%;
+        height: 5px;
+        margin: 10px 0;
+        cursor: pointer;
+    }
+    
+    .progress {
+        background-color: #fe8daa;
+        height: 100%;
+        width: 0%;
+        transition: width 0.5s ease-in;
+    }
+    
+    .image-container::before {
+        content: '';
+        background-color: #fff;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+        border-radius: 50%;
+    }
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <h1> Music Player </h1>
+
+    <div class="music-container" id="music-container">
+        <div class="music-info">
+            <h4 id="title"></h4>
+            <div class="progress-container" id="progress-container">
+                <div class="progress" id="progress"></div>
+            </div>
+        </div>
+
+        <audio src="./music/ukulele.mp3" id="audio"></audio>
+
+        <div class="img-container">
+            <img src="./images/ukulele.jpg" alt="music-cover" id="cover">
+        </div>
+
+        <div class="navigation">
+            <button id="prev" class="action-btn"> <i class="fas fa-backward"></i></button>
+            <button id="play" class="action-btn action-btn-big"> <i class="fas fa-play"></i></button>
+            <button id="next" class="action-btn"> <i class="fas fa-forward"></i></button>
+        </div>
+
+
+    </div> -->
+
+
+
+
+
+
+    <script src="./music.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./infinite.css">
+    <title>Document</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+        background-color: #296ca8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    
+    h1 {
+        margin-bottom: 0;
+        text-align: center;
+    }
+    
+    .filter-container {
+        margin-top: 20px;
+        width: 800px;
+        max-width: 100%;
+    }
+    
+    .filter {
+        width: 100%;
+        padding: 12px;
+    }
+    
+    .filter:focus {
+        outline: none;
+    }
+    
+    .post {
+        background-color: #4992d3;
+        margin: 20px 0;
+        padding: 10px;
+        border-radius: 20px;
+        max-width: 1000px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        position: relative;
+        display: flex;
+    }
+    
+    .post .post-title {
+        margin-bottom: 0;
+        color: #fff;
+    }
+    
+    .post .post-body {
+        margin: 20px 0;
+        line-height: 1.3;
+        color: #fff;
+    }
+    
+    .post .number-box {
+        position: absolute;
+        top: -15px;
+        left: -15px;
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px #296ca8 solid;
+    }
+    
+    .loader {
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        opacity: 0;
+    }
+    
+    .loader.show {
+        opacity: 1;
+    }
+    
+    .circle {
+        margin: 10px;
+        background-color: #fff;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        animation: bounce 0.5s ease-in infinite;
+    }
+    
+    .circle:nth-of-type(2) {
+        animation-delay: 0.1s;
+    }
+    
+    .circle:nth-of-type(3) {
+        animation-delay: 0.2s;
+    }
+    
+    @keyframes bounce {
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+</style>
+
+<body>
+
+    <h1> My Blog Post </h1>
+
+    <div class="filter-container">
+        <input type="text" id="filter" class="filter" placeholder="Enter a search...!">
+    </div>
+
+    <div class="post-container" id="post-container">
+
+        <!-- <div class="post">
+            <div class="number-box">
+                <span class="number"> 1 </span>
+            </div>
+
+            <div class="post-info">
+                <h2 class="post-title"> Post One </h2>
+                <p class="post-body"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse cupiditate odio distinctio hic similique, soluta dicta sed quia debitis nostrum!</p>
+            </div>
+
+        </div>
+
+        <div class="post">
+            <div class="number-box">
+                <span class="number"> 2 </span>
+            </div>
+
+            <div class="post-info">
+                <h2 class="post-title"> Post Two </h2>
+                <p class="post-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, nam asperiores maxime voluptatibus voluptate sequi ab culpa tenetur nemo distinctio.</p>
+            </div>
+
+        </div> -->
+
+    </div>
+
+    <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <h1> My Blog </h1>
+
+    <div class="filter-container">
+        <input type="text" id="filter" class="filter" placeholder="Filter posts...!">
+    </div>
+
+    <div class="post-container" id="post-container">
+        <div class="post">
+            <div class="number-box">
+                <span class="number"> 1 </span>
+            </div>
+
+            <div class="post-info">
+                <h2 class="post-title"> Post One </h2>
+                <p class="post-body"> Lorem ipsum dolor sit amet consectetur adipisicing elit. A earum vel minima consequuntur fuga odio libero. Dignissimos sit ut ipsa eaque quia rerum, a mollitia.</p>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="number-box">
+                <span class="number"> 2 </span>
+            </div>
+
+            <div class="post-info">
+                <h2 class="post-title"> Post Two </h2>
+                <p class="post-body"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem repudiandae reiciendis aliquid quasi a consequatur qui nobis quo ratione recusandae?</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="loader" id="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div> -->
+
+
+
+
+
+    <script src="./infinite.js"></script>
+
+</body>
+
+</html>

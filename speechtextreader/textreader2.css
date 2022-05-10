@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: linear-gradient(0deg, rgba(241, 241, 241, 1) 24%, rgba(252, 221, 221, 1) 92%);
+    height: 100vh;
+    padding: 20px;
+}
+
+.container h1 {
+    text-align: center;
+    color: #5fbaa1;
+}
+
+.btn {
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    background-color: darksalmon;
+    cursor: pointer;
+}
+
+.btn:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn-toggle {
+    display: block;
+    margin: 20px auto;
+}
+
+.text-box {
+    position: absolute;
+    width: 70%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -800px);
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    transition: all 1s ease-in;
+}
+
+.text-box.show {
+    transform: translate(-50%, 0);
+}
+
+.close {
+    text-align: right;
+    cursor: pointer;
+}
+
+.text-box h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.text-box select {
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-color: darksalmon;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.text-box textarea {
+    display: block;
+    width: 100%;
+    line-height: 40px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+.text-box button {
+    display: block;
+    width: 100%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.box {
+    border: 1px black solid;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.box.active {
+    box-shadow: 0 0 5px 5px darksalmon;
+}
+
+.box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.box p {
+    margin: 0;
+    text-align: center;
+    padding: 10px 15px;
+    background-color: darksalmon;
+}
+
+;
